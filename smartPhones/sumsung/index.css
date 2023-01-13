@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #000;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #cdb4db;
+    color: white;
+    width: 100%;
+    position: fixed;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: 'Sevillana', cursive;
+    padding: 5px;
+    margin-left: 5rem;
+    background-color: #ffc8dd;
+    align-items: center;
+    color: black;
+}
+
+.items ul {
+    display: flex;
+}
+
+.items ul li {
+    padding: 1rem;
+    margin-right: 2rem;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.items ul li i {
+    padding-right: 5px;
+}
+
+.items ul li a {
+    color: white;
+}
+
+.items ul li:hover {
+    background-color: #ffc8dd;
+    border-radius: 5px;
+    color: black;
+}
+
+.items a:hover {
+    color: #000;
+}
+
+.search {
+    background-color: #2f3132;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search input {
+    padding: 5px 5rem 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: context-menu;
+    background-color: #2f3132;
+}
+
+.search i {
+    color: black;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-zero {
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3rem 0 0 7rem;
+    letter-spacing: 1.2px;
+    font-size: 1.5rem;
+    margin-top: 6rem;
+}
+
+.header-zero p {
+    opacity: 0.5;
+}
+
+.header-one {
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3rem 7rem 0 0;
+    font-size: 1.58rem;
+    cursor: pointer;
+    margin-top: 5.5rem;
+}
+
+.header-one ul li {
+    background-color: silver;
+    border-radius: 5px;
+    padding: 0 10px 20px 10px;
+}
+
+.header-one i {
+    font-size: 2rem;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.header-two {
+    display: none;
+}
+
+.header-two ul li {
+    padding: 10px;
+}
+
+.header-one ul li:hover .header-two {
+    display: block;
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.header-two ul li:hover {
+    background-color: wheat;
+    color: rgb(3, 125, 246);
+}
+
+.line span {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.container-one {
+    padding: 3rem 0 0 2rem;
+}
+
+.container-one h1 {
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.container-one button {
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.container-one span {
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-one p {
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 5px 0 5px 10px;
+    text-transform: capitalize;
+}
+
+.container-two {
+    display: flex;
+}
+
+.one {
+    padding: 20px;
+}
+
+.one a {
+    background-color: rosybrown;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.discount {
+    display: flex;
+}
+
+.discount i {
+    font-weight: bolder;
+}
+
+.off {
+    opacity: 0.9;
+    text-decoration: line-through;
+}

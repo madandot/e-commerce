@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.heading {
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    padding: 10px;
+    /* position: fixed; */
+}
+
+.headingone {
+    height: 110vh;
+}
+
+.headingone img {
+    padding: 20px;
+}
+
+.brands h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    padding: 20px;
+    height: 20vh;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.card-one img {
+    border-radius: 5px;
+    align-items: center;
+    background-color: rgb(136, 126, 126);
+    box-shadow: 1px 1px 10px 1px rgb(136, 126, 126);
+    cursor: pointer;
+}
+
+.card-one a {
+    display: block;
+    text-align: center;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.card-one a:hover {
+    background-color: tan;
+}
+
+.new {
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 10vh;
+}
+
+.newone {
+    height: 100vh;
+}
+
+.newone a {
+    padding: 10px;
+}
+
+.newone img {
+    border-radius: 10px;
+}
+
+.games {
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 15vh;
+}
+
+.game {
+    height: 70vh;
+}
+
+.game a {
+    padding: 20px;
+}
+
+.game {
+    padding-left: 5rem;
+}
+
+.game img {
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    background-color: #000;
+}
+
+.upgrade {
+    height: 50vh;
+}
+
+.upgrade img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.end {
+    height: 50vh;
+}
+
+.end img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer button {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.footers {
+    display: flex;
+    justify-content: space-around;
+    height: 35vh;
+    padding: 20px;
+    background-color: black;
+}
+
+.footersone h1 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.footersone ul li {
+    text-transform: capitalize;
+    padding: 10px;
+    text-align: center;
+}
+
+.footersone a {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social h1 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.social {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.social i {
+    padding: 20px;
+    font-size: 3rem;
+    color: rgb(246, 3, 43);
+}
