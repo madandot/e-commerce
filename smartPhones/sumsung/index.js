@@ -180,18 +180,55 @@ const samsungPhons = [
     discountedPercentage: "10%",
   },
 ];
+const phoneListElement = document.getElementById("phoneList");
+const highToLowElement = document.getElementById("highToLow");
+const lowToHightElement = document.getElementById("lowToHigh");
+const popularityElement = document.getElementById("popularity");
 
-const phoneListElement = document.getElementById("phonelist");
+let sortedPhones = samsungPhons;
+highToLowElement.onclick = () => {
+  sortedPhones = [];
+  sortedPhones = samsungPhons.sort((a, b) => {
+    const priceA = a.discountedPrice.replaceAll(",", "");
+    const priceB = b.discountedPrice.replaceAll(",", "");
 
-let phoneList = "";
-
-samsungPhons.map((phone, index) => {
-  let specs = "";
-  phone.spec.map((spc, index) => {
-    specs += `<p>${spc}</p>`;
+    return Number(priceB) - Number(priceA);
   });
-  console.log(specs);
-  phoneList += `
+  renderElement(sortedPhones);
+  // console.log(sortedPhones);
+};
+lowToHightElement.onclick = () => {
+  sortedPhones = [];
+  sortedPhones = samsungPhons.sort((a, b) => {
+    const priceA = a.discountedPrice.replaceAll(",", "");
+    const priceB = b.discountedPrice.replaceAll(",", "");
+
+    return Number(priceA) - Number(priceB);
+  });
+  renderElement(sortedPhones);
+  // console.log(sortedPhones);
+};
+
+popularityElement.onclick = () => {
+  sortedPhones = [];
+  sortedPhones = samsungPhons.sort((a, b) => {
+    return parseFloat(b.rating) - parseFloat(a.rating);
+  });
+  renderElement(sortedPhones);
+  // console.log(sortedPhones);
+};
+
+const renderElement = (sortedPhones) => {
+  phoneListElement.innerHTML = "";
+  let phoneList = "";
+
+  sortedPhones.map((phone, index) => {
+    let specs = "";
+    phone.spec.map((spc, index) => {
+      specs += `<p>${spc}</p>`;
+    });
+    // console.log(specs);
+    phoneList += `
      <div class="container" id="item1">
             <div class="container-zero">
                 <img src=${phone.image} alt="" width="400px" height="500px">
@@ -222,8 +259,11 @@ samsungPhons.map((phone, index) => {
         </div>
 
     `;
-});
+  });
 
-// console.log(phoneList);
-console.log(phoneListElement);
-phoneListElement.insertAdjacentHTML("afterbegin", phoneList);
+  phoneListElement.insertAdjacentHTML("afterbegin", phoneList);
+};
+
+renderElement(sortedPhones);
+// console.log(sortedPhones);
+// console.log(phoneListElement);

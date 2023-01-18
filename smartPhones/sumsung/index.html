@@ -8,28 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/3a1f923bf5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../nav.css">
     <script src="./index.js" defer></script>
     <title>Samsung</title>
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <p>Lavish</p>
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Search for brands">
-            <i class="fa fa-search"></i>
-        </div>
-        <div class="items">
-            <ul>
-                <li>Home</li>
-                <li><i class="fa fa-heart"></i></li>
-                <li><i class="fa fa-cart-plus"></i></li>
-                <li><i class="fa fa-user"></i><a href="https://lavishlogincom.netlify.app/">Login/Signup</a></li>
-            </ul>
-        </div>
-    </header>
+    <script id="replace_with_navbar" src="../../nav.js"></script>
     <!-- header -->
     <section>
         <div class="header">
@@ -42,9 +27,9 @@
                     <li>sort by <i class="fa fa-angle-down"></i>
                         <div class="header-two">
                             <ul>
-                                <li>price - high to low</li>
-                                <li>price - low to high</li>
-                                <li>popularity</li>
+                                <li onclick="highToLow();" id="highToLow">price - high to low</li>
+                                <li onclick="lowToHigh();" id="lowToHigh">price - low to high</li>
+                                <li onclick="popularity();" id="popularity">popularity</li>
                             </ul>
                         </div>
                     </li>
@@ -64,7 +49,7 @@
     <!-- BODY DEV -->
     <section>
 
-        <section id="phonelist"></section>
+        <section id="phoneList"></section>
         <!-- <div class="container" id="item1">
             <div class="container-zero">
                 <img src="./photos/SAMSUNG Galaxy Z Fold4.jpg" alt="" width="400px" height="500px">
