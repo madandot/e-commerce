@@ -41,7 +41,7 @@ li {
 }
 
 .slideone a {
-    margin: 13rem 0 0 14rem;
+    margin-left: 20em;
     width: 100%;
     background-color: #cdb4db;
     padding: 10px;
@@ -51,6 +51,7 @@ li {
     font-size: 2em;
     outline: none;
     text-transform: capitalize;
+
 }
 
 .heading h1 {
@@ -60,6 +61,7 @@ li {
     letter-spacing: 2px;
     font-size: 2rem;
     padding: 20px;
+    height: 20vh;
 }
 
 .card {

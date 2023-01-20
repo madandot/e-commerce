@@ -1,0 +1,10 @@
+.one {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem;
+}
+
+.three ul {
+    display: flex;
+
+}
